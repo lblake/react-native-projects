@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ImageViewer from './components/ImageViewer';
@@ -16,7 +17,7 @@ export default function App() {
     });
     if (!result.canceled) {
       setSelectedImage(result.assets[0].uri);
-      console.log(result);
+      // console.log(result);
     } else {
       alert('You did not pick an image');
     }
@@ -24,8 +25,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <ImageViewer placeholderImageSource={PlaceholderImage} />
-        selectedImage={selectedImage}
+        <ImageViewer
+          placeholderImageSource={PlaceholderImage}
+          selectedImage={selectedImage}
+        />
       </View>
       <View style={styles.footerContainer}>
         <Button
