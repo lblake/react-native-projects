@@ -5,11 +5,11 @@ import React from 'react';
 
 const EmojiPicker = ({ isVisible, children, onClose }) => {
   return (
-    <Modal animationType='slide' transparent={ture} visibility={isVisible}>
+    <Modal animationType='slide' transparent={true} visibility={isVisible}>
       <View style={styles.modalContent}>
         <View style={styles.titleContainer}>
           <Text style={styles.title}> Choose a sticker</Text>
-          <Pressable onPress={onclose}>
+          <Pressable onPress={onClose}>
             <MaterialIcons name='close' color='#fff' size={22} />
           </Pressable>
         </View>
