@@ -5,7 +5,7 @@ import React from 'react';
 
 const EmojiPicker = ({ isVisible, children, onClose }) => {
   return (
-    <Modal animationType='slide' transparent={true} visibility={isVisible}>
+    <Modal animationType='slide' transparent={true} visible={isVisible}>
       <View style={styles.modalContent}>
         <View style={styles.titleContainer}>
           <Text style={styles.title}> Choose a sticker</Text>
