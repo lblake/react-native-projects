@@ -2,12 +2,13 @@
 // import firebase from 'firebase/app';
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
+import { API_KEY } from '@env';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCtxH1CrxidfTR8KXXk0QGJHFMm1d9Wpgk',
+  apiKey: API_KEY,
   authDomain: 'fir-login-88a3f.firebaseapp.com',
   projectId: 'fir-login-88a3f',
   storageBucket: 'fir-login-88a3f.appspot.com',
